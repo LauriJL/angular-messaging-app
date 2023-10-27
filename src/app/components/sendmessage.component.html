@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="title">Send Message</h2>
+	<form (ngSubmit)="sendMessage()" #messageForm="ngForm">
+		<div class="form-group" style="margin-top: 1rem;">
+			<!-- <label for="username" class="form-label">Message</label> -->
+			<input type="text"
+					name="inputText"
+					id="inputText"
+					class="form-control"
+					[(ngModel)]="item.message" />
+		</div>
+        <input type="submit" class="btn btn-primary" style="margin-top: 1rem;" value="Send"/>
+	</form>
+</div>
+
+
+

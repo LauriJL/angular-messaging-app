@@ -1,0 +1,14 @@
+.container {
+	margin:auto;
+	text-align:center;
+	width:40%;
+	background-color: lightskyblue;
+	border-radius: 10px;
+}
+
+.label {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+

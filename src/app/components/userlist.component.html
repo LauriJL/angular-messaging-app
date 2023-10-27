@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 class="title">Users</h2>
+    <br/>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Token</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of list">
+                <td>{{u.username}}</td>
+                <td>{{u.messagetoken}}</td>
+                <button type="button" class="btn btn-success" (click)="goToSendMessage(u.messagetoken)">Send Message</button>
+            </tr>
+        </tbody>
+    </table>
+</div>

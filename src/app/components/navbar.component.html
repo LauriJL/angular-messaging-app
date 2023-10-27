@@ -1,0 +1,25 @@
+<head>
+	<style>
+		.navbar-custom {
+            background-color: lightskyblue;
+        }
+	</style>
+</head>
+
+<nav class="navbar navbar-custom">
+	<p class="navbar-brand" style="margin-left: 50px; font-weight: bold; font-size: 35px;">Messaging App</p>
+	<ul class="navbar-nav" *ngIf="isUserLogged(); else notLogged" style="margin-right: 50px; font-weight: bold;">
+		<li class="nav-item">
+			<a class="nav-link" routerLink="/list">Your Messages</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" routerLink="/users">Users</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" routerLink="/" (click)="logout()">Logout</a>
+		</li>
+	</ul>	
+	<ng-template #notLogged>
+		<ul class="navbar-nav"></ul>
+	</ng-template>
+</nav>
